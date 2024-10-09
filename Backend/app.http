@@ -1,0 +1,99 @@
+GET http://localhost:4000/
+#####
+
+POST http://localhost:4000/userneed/
+Content-Type:application/json
+
+{
+    "postedDate":"5",
+    "imageUrl1":"https://res.cloudinary.com/vignan/image/upload/v1725457979/stock-photo-india-march-missionary-woman-teach-poor-rural-indian-children-in-the-school-614825072_s9evyw.jpg",
+    "imageUrl2":"https://res.cloudinary.com/vignan/image/upload/v1725457978/44809515_1184056101746728_5759071632312238080_n_bd8jme.jpg",
+    "imageUrl3":"https://res.cloudinary.com/vignan/image/upload/v1725457977/43701065_1184055668413438_2619680362636247040_n_ytgdjx.jpg",
+    "title":"BooksDonation",
+    "description":"Donations usually take the form of money, but giving anything away to a cause could be considered a donation — like giving books to a library or bringing deviled eggs to a school potluck."
+    
+}
+
+
+##### ADMIN-PAGE
+
+GET http://localhost:4000/admin
+
+####
+POST http://localhost:4000/users/
+Content-Type:application/json
+
+{
+    "userId":"02616",
+    "passWord":"02616"
+}
+
+#####
+POST http://localhost:4000/login/
+Content-Type:application/json
+
+{
+    "userId":"2751",
+    "passWord":"2751"
+    
+}
+
+#### USER-PAGE
+POST http://localhost:4000/usersign/
+Content-Type:application/json
+
+{
+    "studentRegNo":"211FA05401",
+    "nameOfStudent":"somaiah",
+     "passWord":"1234"
+}
+
+####
+GET http://localhost:4000/user/
+
+####
+POST http://localhost:4000/userlogin/
+Content-Type:application/json
+
+{
+    "studentRegNo":"211FA05401",
+    "passWord":"1234"
+    
+}
+
+####
+GET http://localhost:4000/userreqget/
+
+#####
+
+POST http://localhost:4000/userreq/
+Content-Type:application/json
+
+{
+    "postedDate":"5",
+    "imageUrl1":"https://res.cloudinary.com/vignan/image/upload/v1725457979/stock-photo-india-march-missionary-woman-teach-poor-rural-indian-children-in-the-school-614825072_s9evyw.jpg",
+    "imageUrl2":"https://res.cloudinary.com/vignan/image/upload/v1725457978/44809515_1184056101746728_5759071632312238080_n_bd8jme.jpg",
+    "imageUrl3":"https://res.cloudinary.com/vignan/image/upload/v1725457977/43701065_1184055668413438_2619680362636247040_n_ytgdjx.jpg",
+    "title":"BooksDonation",
+    "description":"Donations usually take the form of money, but giving anything away to a cause could be considered a donation — like giving books to a library or bringing deviled eggs to a school potluck."
+    
+}
+
+#####
+
+POST http://localhost:4000/needofreq/
+Content-Type:application/json
+
+{
+    "id":"1",
+    "postdate":"5",
+    "imageUrl1":"https://res.cloudinary.com/vignan/image/upload/v1725457979/stock-photo-india-march-missionary-woman-teach-poor-rural-indian-children-in-the-school-614825072_s9evyw.jpg",
+    "imageUrl2":"https://res.cloudinary.com/vignan/image/upload/v1725457978/44809515_1184056101746728_5759071632312238080_n_bd8jme.jpg",
+    "imageUrl3":"https://res.cloudinary.com/vignan/image/upload/v1725457977/43701065_1184055668413438_2619680362636247040_n_ytgdjx.jpg",
+    "title":"BooksDonation",
+    "description":"Donations usually take the form of money, but giving anything away to a cause could be considered a donation — like giving books to a library or bringing deviled eggs to a school potluck."
+    
+}
+
+###
+GET http://localhost:4000/needofreqget/
